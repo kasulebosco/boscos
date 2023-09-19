@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form.</title>
+    <style>
+        body {
+            background-color: #ffd60a;
+        }
+        form {
+            border: solid 3px black;
+            display: flex;
+            justify-content: center;
+            margin-left: 25%;
+            margin-right: 25%;
+            padding: 2%;
+            border-radius: 5%;
+            background-color: #000814;
+            color: white;
+        }
+        table, th, td {
+            padding: 2%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #names, #mails, #num, #pwd, #dates {
+            width: 100%;
+        }
+        .button {
+            width: 75%;
+            height: 40px;
+            font-size: x-large;
+            border-radius: 50%;
+            background-color: #d00000;
+            color: whitesmoke;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>SIMPLE FORM APPLICATION</h1>
+    <form>
+        <table>
+            <tr>
+                <th><label for="names">Full name</label></th>
+                <td><input type="text" id="names" name="person" placeholder="John Micheal"></td>
+            </tr>
+            <tr>
+                <th><label for="mails">Email</label></th>
+                <td><input type="email" name="gmail" id="mails"></td>
+            </tr>
+            <tr>
+                <th><label for="num">Phone Number</label></th>
+                <td><input type="number" name="phone" id="num"></td>
+            </tr>
+            <tr>
+                <th><label for="pwd">User Password</label></th>
+                <td><input type="password" name="userpassword" id="pwd"></td>
+            </tr>
+            <tr>
+                <th><label for="dates">Date of Birth</label></th>
+                <td><input type="date" name="birthdate" id="dates"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Which language are you suitable with?</th>
+                <td>
+                    <input type="checkbox" name="lang" id="eng">
+                    <label for="eng">English</label>
+                    <input type="checkbox" name="lang" id="lug">
+                    <label for="lug">Luganda</label>
+                    <input type="checkbox" name="lang" id="fre">
+                    <label for="fre">French</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Tell us what you expect from our Company</th>
+                <td><textarea name="messages" style="width: 200px; height: 50px;">Company Expectations</textarea></td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" value="Submit" class="button"></th>
+            </tr>
+        </table>
+    </form>
+    <a href="gr.html">Next Page</a>
+</body>
+</html>
